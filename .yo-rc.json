@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.19.0",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "cenco-panel-cargas",
+    "libraryId": "8ce2be7b-9aa7-4671-9a53-7066bb590742",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "cenco-panel-cargas",
+    "solutionShortDescription": "cenco-panel-cargas description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

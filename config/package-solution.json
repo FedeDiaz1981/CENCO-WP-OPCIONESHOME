@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "cenco-panel-cargas-client-side-solution",
+    "id": "8ce2be7b-9aa7-4671-9a53-7066bb590742",
+    "version": "1.5.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "cenco-panel-cargas description"
+      },
+      "longDescription": {
+        "default": "cenco-panel-cargas description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "cenco-panel-cargas Feature",
+        "description": "The feature that activates elements of the cenco-panel-cargas solution.",
+        "id": "7fbba761-3e30-4ea8-af44-1fdcb8614903",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/cenco-panel-cargas.sppkg"
+  }
+}

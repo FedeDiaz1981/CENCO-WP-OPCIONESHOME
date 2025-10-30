@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "cenco-panel-cargas-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/cencoPanelCargas/CencoPanelCargasWebPart.js",
+          "manifest": "./src/webparts/cencoPanelCargas/CencoPanelCargasWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CencoPanelCargasWebPartStrings": "lib/webparts/cencoPanelCargas/loc/{locale}.js"
+  }
+}
