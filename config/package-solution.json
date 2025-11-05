@@ -3,7 +3,7 @@
   "solution": {
     "name": "cenco-panel-cargas-client-side-solution",
     "id": "8ce2be7b-9aa7-4671-9a53-7066bb590742",
-    "version": "1.5.0.0",
+    "version": "4.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,

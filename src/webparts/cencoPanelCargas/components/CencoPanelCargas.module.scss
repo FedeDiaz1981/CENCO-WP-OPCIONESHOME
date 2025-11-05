@@ -110,3 +110,15 @@
   color: #323130;
   letter-spacing: .2px;
 }
+
+.modalOuter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 0 !important;
+
+  :global(.ms-Overlay) {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
