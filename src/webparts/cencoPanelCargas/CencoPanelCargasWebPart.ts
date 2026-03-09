@@ -1,7 +1,8 @@
 import { Version } from '@microsoft/sp-core-library';
 import {
   IPropertyPaneConfiguration,
-  PropertyPaneTextField
+  PropertyPaneTextField,
+  PropertyPaneToggle, // 👈 import del toggle
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import * as React from 'react';
@@ -12,6 +13,7 @@ export interface ICencoPanelCargasWebPartProps {
   docsUrl: string;
   vehiclesUrl: string;
   peopleUrl: string;
+  modal: boolean; // 👈 ya lo tenías
 }
 
 export default class CencoPanelCargasWebPart
@@ -22,7 +24,8 @@ export default class CencoPanelCargasWebPart
       React.createElement(CencoPanelCargas, {
         docsUrl: this.properties.docsUrl,
         vehiclesUrl: this.properties.vehiclesUrl,
-        peopleUrl: this.properties.peopleUrl
+        peopleUrl: this.properties.peopleUrl,
+        modal: this.properties.modal === true, // 👈 le pasamos el toggle al componente
       });
 
     ReactDom.render(element, this.domElement);
@@ -46,12 +49,19 @@ export default class CencoPanelCargasWebPart
               groupFields: [
                 PropertyPaneTextField('docsUrl', { label: 'URL - Documentos' }),
                 PropertyPaneTextField('vehiclesUrl', { label: 'URL - Vehículos' }),
-                PropertyPaneTextField('peopleUrl', { label: 'URL - Personas' })
-              ]
-            }
-          ]
-        }
-      ]
+                PropertyPaneTextField('peopleUrl', { label: 'URL - Personas' }),
+                // 👇 plan B: si está activado mostramos el “modal” flotante
+                PropertyPaneToggle('modal', {
+                  label: 'Abrir en modal flotante',
+                  onText: 'Sí',
+                  offText: 'No',
+                  checked: this.properties.modal,
+                }),
+              ],
+            },
+          ],
+        },
+      ],
     };
   }
 }

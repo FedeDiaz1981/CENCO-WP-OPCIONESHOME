@@ -4,4 +4,5 @@ export interface ICencoPanelCargasProps {
   environmentMessage: string;
   hasTeamsContext: boolean;
   userDisplayName: string;
+  modal: boolean;
 }
